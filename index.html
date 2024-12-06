@@ -1,0 +1,1089 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+<!-- Google Tag Manager -->
+<script>
+(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-5PR5HWBB');
+</script>
+<!-- End Google Tag Manager -->
+
+<meta name="google-site-verification" content="DU5FqX3c_ZeqxLRBKA1sL5f1qWgM2GIrmhjivfVSuhM" />
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="cache-control" content="no-cache, no-store, must-revalidate">
+<meta http-equiv="pragma" content="no-cache">
+<meta http-equiv="expires" content="0">
+<meta name="keywords" content="Saveetha , grades, cgpa , saveetha cgpa,saveetha cgpa calculator,arms, arms .sse , saveetha.com, saveetha school of engineering ,concept maps , courses , saveetha updates, arms , SSE, Sec ,cgpa calculator saveetha university , saveetha calculator, saveetha attendance calculator">
+<meta name="author" content="Mohan Reddy">
+<meta name="title" content="saveetha cgpa calculator" />
+<meta name="description" content="Saveetha School Of Engineering CGPA calculator. Input subjects grades to calculate your cumulative grade point average.attendance tracker, and concept maps to help students manage their academic progress efficiently. Built by ComradeMohan for Saveetha School of Engineering Students , Chennai." />
+<title> Saveetha CGPA Calculator by @comrademohan </title>
+<script>
+  if (window.location.search) {
+    var newUrl = window.location.origin + window.location.pathname;
+    window.history.replaceState({}, document.title, newUrl);
+  }
+</script>
+<link rel="stylesheet" href="style.css?v=9.1.8">
+<link rel="icon" href="https://i.ibb.co/n1kRy3P/Picture1-2.png" type="image/x-icon">
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-QVX45F7W6M');
+</script>
+</head>
+<body>
+  <div class="loaderbox" id="loaderbox"> 
+  </div>
+<div id="content">
+  <div class="register" id="register" style="display: flex;">
+    <div class="wrapper">
+      <form id="registerForm" action="register.php" method="post">
+        <h1>Login</h1>
+        <div class="input-box">
+          <input
+            type="number"
+            id="username"
+            class="username-txt"
+            minlength ="9"
+            oninput="validateInput()"
+            placeholder="REGISTER NUMBER"
+            name="username"
+            required
+          />
+          <i class="bx" id="message"></i>
+        </div>
+        <div class="input-box">
+          <input
+            type="password"
+            class="password"
+            name="password"
+            placeholder="password"
+            required
+          />
+          <i class="bx"></i>
+        </div>
+
+        <button type="submit" class="btn submit-btn">Login</button>
+      </form>
+      <!-- Link to Saveetha Hub -->
+      <div style="margin-top: 10px;">
+        <a href="https://saveetha-hub.netlify.app/" target="_blank" style="text-decoration: none; color: rgb(253, 253, 253); display: flex;justify-content: center;">Saveetha Hub is now ready!</a>
+      </div>
+    </div>
+</div>
+
+    <noscript>
+      <iframe src="https://www.googletagmanager.com/ns.html?id=GTM-5PR5HWBB"
+    height="0" width="0" style="display:none;visibility:hidden"></iframe>
+  </noscript>
+    <!-- End Google Tag Manager (noscript) -->
+
+    <header class="headerbar" style="z-index:999"> 
+      <nav class="navbar" id="navbar">
+          <div class="logo">
+              <a href="#">
+                <span id="registered-number">Home</span>
+                  <!-- <img src="https://i.ibb.co/n1kRy3P/Picture1-2.png" alt="Logo" /> -->
+              </a>
+          </div>
+          <ul class="navbar-nav">
+              <li><a href="https://comrademohan.bio.link">Home</a></li>
+              <li><a href="#cgpa">Cgpa</a></li>
+              <li><a href="#attendance">Attendance</a></li>
+              <li><a href="#concept-map">Concepts</a></li>
+              <li><a href="#courses1">Courses</a></li>
+              <li><a href="#events" >Events </a></li>
+              <li><a href="#contact">Contact Us</a></li>
+              <button class="subscribe-button" id="subscribeBtn"  onclick="subscribe()">
+                <span>Subscribe</span>
+              </button>
+              <!-- <li><a href="https://saveethahub.rf.gd">Saveetha Hub</a></li> -->
+          </ul>
+            <div class="nav-mobile-end">
+            <button class="subscribe-button" id="subscribeBtn"  onclick="subscribe()" >
+              <span>Subscribe</span>
+            </button>
+          <div class="navbar-toggle" id="navbar-toggle">
+            
+              <span class="bar"></span>
+              <span class="bar"></span>
+              <span class="bar"></span>
+          </div>
+        </div>
+      </nav>
+      <div class="mobile-nav" id="mobile-nav">
+          <ul  onclick=hideSidebar(event)>
+            <li><a href="https://comrademohan.bio.link">Bio</a></li>
+                    <li><a href="https://comrademohan.bio.link">Bio</a></li>
+          
+            <li><a href="#cgpa">Cgpa</a></li>
+            <li><a href="#attendance">Attendance</a></li>
+            <li><a href="#concept-map">Concept Maps</a></li>
+            <li><a href="#academics">academics</a></li>
+            <li><a href="#courses1">Courses</a></li>
+            <li><a href="#events" >Events </a></li>
+            <!-- <li><a href="https://saveethahub.rf.gd">Saveetha Hub</a></li> -->
+            <li><a href="#contact">Contact Us</a></li>
+          
+          </ul>
+      </div>
+    </header>
+                <!-- <section id="home" class="saveetha-home-page">
+        <div class="hero-content-home">
+          <h1 class="welcome-message">Welcome to Saveetha Hub</h1>
+          <p class="tagline-home">Empowering Futures, Engineering Excellence</p>
+          <div class="hero-buttons-home">
+            <a href="#courses" class="cta-button-home">Explore Courses</a>
+            <a href="#campus" class="cta-button-home secondary">Virtual Tour</a>
+          </div>
+          <br>
+            <br>
+          <br>
+            <br>
+          <div class="scroll-indicator-home">
+            
+            <span>Scroll to Explore</span>
+            <div class="scroll-arrow-home"></div>
+          </div>
+        </div>
+      </section> -->
+      <section class="cgpa-section" id="cgpa" style="background: linear-gradient(135deg, #000428, #004e92);">
+  <div class="cgpa">
+    <div class="container" style="  background: rgba(242, 240, 240, 0.275);border-radius: 16px;
+backdrop-filter: blur(10px);  color:white;box-shadow: 0 8px 32px rgba(0, 0, 0, 0.2);">
+  <!-- HEADER -->
+      <h1 class="heading" style="font-size: clamp(1.2rem, 4vw, 1.8rem); color: white;"> SAVEETHA CGPA CALCULATOR</h1><br>
+      <!-- FORM  -->
+        <form id="cgpaForm" class="FORMS" method="post" action="save_grades.php">
+                  <br>
+                  <label for="SGrade">Number of S Grades:
+                  <input type="number" id="SGrade" name="SGrade" value="0" min="0"></label>
+                  <label for="AGrade">Number of A Grades:
+                  <input type="number" id="AGrade" name="AGrade" value="0" min="0"></label>
+                  <label for="BGrade">Number of B Grades:
+                  <input type="number" id="BGrade" name="BGrade" value="0" min="0"></label>
+                  <label for="CGrade">Number of C Grades:
+                  <input type="number" id="CGrade" name="CGrade" value="0" min="0"></label>
+                  <label for="DGrade">Number of D Grades:
+                  <input type="number" id="DGrade" name="DGrade" value="0" min="0"></label>
+                  <label for="EGrade">Number of E Grades:
+                  <input type="number" id="EGrade" name="EGrade" value="0" min="0"></label>
+                  <button  type="button" alt="" id="calculate-button" onclick="calculateCGPA()"  class="submit">Calculate</button><br><br>
+                  <div class="home-count">
+                    <div class="box">
+                      <h1 class="count" data-target="2">10</h1>
+                    </div>  
+                </div>                           
+        </form>
+        <div style="display: none;" id="result"></div>
+
+
+          <div class="footer">
+            
+            <a href="https://api.whatsapp.com/send?text=Check out the Saveetha CGPA Calculator for quick and easy CGPA calculations! Just enter your grades, and it does the rest.            Perfect for Saveetha University students. Visit : https://cgpa.rf.gd/" class="whatsapp-btn" target="_blank">
+              
+              Do Share on WhatsApp
+            </a>    
+          </div>
+    </div>         
+ </section>
+
+ <section id="attendance"> 
+  <div class="calculator-card">
+      <h2> Attendance Calculator</h2>
+      <div class="input-container">
+          <input 
+              type="number" 
+              id="totalClasses" 
+              placeholder=" "
+              min="1"
+          >
+          <label for="totalClasses">Total Classes</label>
+      </div>
+      <div class="input-container">
+          <input 
+              type="number" 
+              id="attendedClasses" 
+              placeholder=" "
+              min="0"
+          >
+          <label for="attendedClasses">Classes Attended</label>
+      </div>
+      <div class="result-attendance">
+          <div class="percentage" id="percentage">0%</div>
+          <div class="absent-classes" id="absentClasses">
+              Enter your attendance details
+          </div>
+          <div class="needtoattend" id="needtoattend"></div>
+          <div class="status" id="status"></div>
+      </div>
+  </div>
+  <script>
+      document.addEventListener('DOMContentLoaded', () => {
+          const totalClassesInput = document.getElementById('totalClasses');
+          const attendedClassesInput = document.getElementById('attendedClasses');
+          const percentageElement = document.getElementById('percentage');
+          const absentClassesElement = document.getElementById('absentClasses');
+          const statusElement = document.getElementById('status');
+          const needtoattend = document.getElementById('needtoattend');
+
+          function animateValue(element, start, end, duration) {
+              const range = end - start;
+              const startTime = performance.now();
+              
+              function update(currentTime) {
+                  const elapsed = currentTime - startTime;
+                  const progress = Math.min(elapsed / duration, 1);
+                  
+                  const value = start + (range * progress);
+                  element.textContent = `${Math.round(value)}%`;
+                  
+                  if (progress < 1) {
+                      requestAnimationFrame(update);
+                  }
+              }
+
+              requestAnimationFrame(update);
+          }
+
+          function calculateAttendance() {
+              const totalClasses = parseInt(totalClassesInput.value) || 0;
+              const attendedClasses = parseInt(attendedClassesInput.value) || 0;
+
+              if (totalClasses === 0) {
+                  resetDisplay();
+                  return;
+              }
+              
+              if (attendedClasses > totalClasses) {
+                  attendedClassesInput.value = totalClasses;
+                  return;
+              }
+
+              // Calculate percentage
+              const percentage = Math.round((attendedClasses / totalClasses) * 100);
+              animateValue(percentageElement, parseFloat(percentageElement.textContent) || 0, percentage, 500);
+
+              // Calculate remaining absences based on 80% attendance requirement
+              const maxAbsences = Math.floor(totalClasses * 0.2);
+              const currentAbsences = totalClasses - attendedClasses;
+              const remainingAbsences = maxAbsences - currentAbsences;
+
+              updateAbsentMessage(remainingAbsences);
+              updateStatus(percentage);
+              calculateAdditionalClasses(remainingAbsences, totalClasses, attendedClasses);
+          }
+
+          function calculateAdditionalClasses(remainingAbsences, totalClasses, attendedClasses) {
+              if (remainingAbsences < 0) {
+                  // Calculate how many more classes need to be attended
+                  const totalClasses = parseInt(totalClassesInput.value) || 0;
+              const attendedClasses = parseInt(attendedClassesInput.value) || 0;
+
+                  const additional_classes = Math.ceil((0.8*totalClasses-attendedClasses)/0.2);
+                  Math.ceil('additional_classes');
+                  needtoattend.textContent = `You need to attend ${Math.max(additional_classes, 0)} more class${additional_classes === 1 ? '' : 'es'}.`;
+              } else {
+                  needtoattend.textContent = '';
+              }
+          }
+
+          function updateAbsentMessage(remainingAbsences) {
+              if (remainingAbsences > 0) {
+                  absentClassesElement.textContent = 
+                      `You can miss ${remainingAbsences} more class${remainingAbsences === 1 ? '' : 'es'}`;
+              } else if (remainingAbsences === 0) {
+                  absentClassesElement.textContent = 
+                      'You have reached the maximum allowed absences';
+              } else {
+                  absentClassesElement.textContent = 
+                      `You have exceeded the allowed absences by ${Math.abs(remainingAbsences)}`;
+              }
+          }
+
+          function updateStatus(percentage) {
+              statusElement.className = 'status';
+              
+              if (percentage >= 90) {
+                  statusElement.textContent = 'Excellent! 🌟';
+                  statusElement.classList.add('good');
+              } else if (percentage >= 80) {
+                  statusElement.textContent = 'Good Standing ✨';
+                  statusElement.classList.add('good');
+              } else if (percentage >= 70) {
+                  statusElement.textContent = 'Need Attention ⚠️';
+                  statusElement.classList.add('warning');
+              } else {
+                  statusElement.textContent = 'Critical Status ⚡';
+                  statusElement.classList.add('danger');
+              }
+          }
+
+          function resetDisplay() {
+              percentageElement.textContent = '0%';
+              absentClassesElement.textContent = 'Enter your attendance details';
+              statusElement.className = 'status';
+              statusElement.textContent = '';
+              needtoattend.textContent = '';
+          }
+
+          totalClassesInput.addEventListener('input', calculateAttendance);
+          attendedClassesInput.addEventListener('input', calculateAttendance);
+
+          // Add input animations
+          const inputs = document.querySelectorAll('input');
+          inputs.forEach(input => {
+              input.addEventListener('focus', () => {
+                  input.parentElement.style.transform = 'scale(1.02)';
+              });
+              
+              input.addEventListener('blur', () => {
+                  input.parentElement.style.transform = 'scale(1)';
+              });
+          });
+      });
+  </script>
+</section>
+
+
+
+
+        
+          <section id="concept-map"><BR>
+          <br>
+            <div class="conept_container">
+              <h3>CONCEPT MAPS</h3>
+            </div>
+              <div class="search-bar">
+                <input type="text" placeholder="Search concept map..." class="search-input">
+              </div>
+
+              <div class="pdf-container">
+                <div class="pdf-item">
+                  <a href="https://drive.google.com/file/d/1JTnmFBCOfxUy33o6ESIL2EvcFjZN_RvT/view?usp=sharing" target="_blank" class="pdf-link">
+                    <div class="pdf-thumbnail"></div>
+                    <div class="pdf-title">Engineering Mathematics</div>
+                  </a>
+                </div>
+
+                <div class="pdf-item">
+                  <a href="https://drive.google.com/file/d/1gBg3YHO2I_WrTb139pngZmHhEJ0PnXR2/view?usp=sharing" target="_blank" class="pdf-link">
+                    <div class="pdf-thumbnail"></div>
+                    <div class="pdf-title">Discrete Mathematics</div>
+                  </a>
+                </div>
+
+
+                <div class="pdf-item">
+                  <a href="https://drive.google.com/file/d/1Javdl56A03lGSkBDEAoAX-S151M9acAl/view?usp=sharing" target="_blank" class="pdf-link">
+                    <div class="pdf-thumbnail"></div>
+                    <div class="pdf-title">Engineering Chemistry</div>
+                  </a>
+                </div>
+
+                <div class="pdf-item">
+                  <a href="https://drive.google.com/file/d/1Byc3X8ou0tmvO5v1v38vkKopn-yEbMrk/view?usp=sharing" target="_blank" class="pdf-link">
+                    <div class="pdf-thumbnail"></div>
+                    <div class="pdf-title">Applied Physics</div>
+                  </a>
+                </div>
+
+                <div class="pdf-item">
+                  <a href="https://drive.google.com/file/d/1EPDjMyr4Rhhx2-FHq_QYsFwp57mEyZpL/view?usp=sharing" target="_blank" class="pdf-link">
+                    <div class="pdf-thumbnail"></div>
+                    <div class="pdf-title">Professional Ethics</div>
+                  </a>
+                </div>
+
+
+                <div class="pdf-item">
+                  <a href="https://drive.google.com/file/d/1XHf-Ov9RHSasAgciU_WXKeoAYULN18bc/view?usp=sharing" target="_blank" class="pdf-link">
+                    <div class="pdf-thumbnail"></div>
+                    <div class="pdf-title">Biology and Environmental Science for Engineers</div>
+                  </a>
+                </div>
+
+                <div class="pdf-item">
+                  <a href="https://drive.google.com/file/d/1Di9RXsJBsZi0csYI9PVgbjM-ZANFUiPc/view?usp=sharing" target="_blank" class="pdf-link">
+                    <div class="pdf-thumbnail"></div>
+                    <div class="pdf-title">Fundamentals of Computing</div>
+                  </a>
+                </div>
+
+
+
+                <div class="pdf-item">
+                  <a href="https://drive.google.com/file/d/17xWKmvzUT0JbAuIJSraPCQE7ehoGqSZg/view?usp=sharing" target="_blank" class="pdf-link">
+                    <div class="pdf-thumbnail"></div>
+                    <div class="pdf-title">Cryptography and Networking Security</div>
+                  </a>
+                </div>
+
+                <div class="pdf-item">
+                  <a href="https://drive.google.com/file/d/19sAV6lBMd1MmGI6CHHb29WNBQZfmh3Ns/view?usp=sharing" target="_blank" class="pdf-link">
+                    <div class="pdf-thumbnail"></div>
+                    <div class="pdf-title">Internet Programming</div>
+                  </a>
+                </div>
+
+                <div class="pdf-item">
+                  <a href="https://drive.google.com/file/d/1F-ViYhMWEGdrcW3M9yfbkmpI6rUYqsa7/view?usp=sharing" target="_blank" class="pdf-link">
+                    <div class="pdf-thumbnail"></div>
+                    <div class="pdf-title">Microprocessors and Microcontrollers</div>
+                  </a>
+                </div>
+
+          
+                <div class="pdf-item">
+                  <a href="https://drive.google.com/file/d/1ZYxXFjJNjPg0E-2ICZEaI9wrfKcU9Bue/view?usp=sharing" target="_blank" class="pdf-link">
+                    <div class="pdf-thumbnail"></div>
+                    <div class="pdf-title">Database Management Systems</div>
+                  </a>
+                </div>
+
+                <div class="pdf-item">
+                  <a href="https://drive.google.com/file/d/157NaZMdICedhRDeKnhG-Dh5XgavNFWME/view?usp=sharing" target="_blank" class="pdf-link">
+                    <div class="pdf-thumbnail"></div>
+                    <div class="pdf-title">Design and Analysis of Algorithms</div>
+                  </a>
+                </div>
+
+                <div class="pdf-item">
+                  <a href="https://drive.google.com/file/d/1SmbYnpSAbHslyIl-GZHCutPfnj-gjmra/view?usp=sharing" target="_blank" class="pdf-link">
+                    <div class="pdf-thumbnail"></div>
+                    <div class="pdf-title">Computer Networks</div>
+                  </a>
+                </div>
+              
+                <div class="pdf-item">
+                  <a href="https://drive.google.com/file/d/1EwBLWzx4-MTzAjztbXKcbt1koM40LFVL/view?usp=sharing" target="_blank" class="pdf-link">
+                    <div class="pdf-thumbnail"></div>
+                    <div class="pdf-title">Total Quality Management</div>
+                  </a>
+                </div>
+
+
+                <div class="pdf-item">
+                  <a href="https://drive.google.com/file/d/16weBmSlmInDD8INzPlLo8FXGp30hzcvj/view?usp=sharing" target="_blank" class="pdf-link">
+                    <div class="pdf-thumbnail"></div>
+                    <div class="pdf-title">Computer Architecture</div>
+                  </a>
+                </div>
+
+                <div class="pdf-item">
+                  <a href="https://drive.google.com/file/d/1h2X-v8cifsFQRDmIFTkWtn8Qgv847Qbc/view?usp=sharing" target="_blank" class="pdf-link">
+                    <div class="pdf-thumbnail"></div>
+                    <div class="pdf-title">Theory of Computation</div>
+                  </a>
+                </div>
+
+                <div class="pdf-item">
+                  <a href="https://drive.google.com/file/d/1xtyGgBINCu4qhaRD5qIWe9pddUpy08yx/view?usp=sharing" target="_blank" class="pdf-link">
+                    <div class="pdf-thumbnail"></div>
+                    <div class="pdf-title">Compiler Design</div>
+                  </a>
+                </div>
+
+
+                <div class="pdf-item">
+                  <a href="https://drive.google.com/file/d/16nrYK3O1oOK36BhxHMY-uIhKdSKykztb/view?usp=sharing" target="_blank" class="pdf-link">
+                    <div class="pdf-thumbnail"></div>
+                    <div class="pdf-title">Artificial Intelligence</div>
+                  </a>
+                </div>
+              </div>
+              <script>
+              const searchInput = document.querySelector('.search-input');
+                  const pdfItems = document.querySelectorAll('.pdf-item');
+
+                  searchInput.addEventListener('input', () => {
+                    const searchTerm = searchInput.value.toLowerCase();
+
+                    pdfItems.forEach(item => {
+                      const title = item.querySelector('.pdf-title').textContent.toLowerCase();
+
+                      if (title.includes(searchTerm)) {
+                        item.style.display = 'block';
+                      } else {
+                        item.style.display = 'none';
+                      }
+                    });
+                  });
+                </script>
+            </section>
+           <section id="academics" class="academics" style="background: url('https://th.bing.com/th/id/OIP.Hrq9BPIErMXH4-8-8RpCBAHaEK?rs=1&pid=ImgDetMain'); background-repeat:no-repeat; background-position: center; background-size: cover;">
+        <h2>Academics</h2>
+    
+        <div class="accordion">
+            <h3 class="accordion-header">Department of Computer Science(updating)</h3>
+            <div class="accordion-content">
+                <div class="subject-grid">
+                    <div class="subject">
+                        <h4 class="subject-header">
+                            <a href="#" class="subject-link" data-subject="Data-Structures">Data Structures</a>
+                        </h4>
+                    </div>
+                    
+                    <div class="subject">
+                        <h4 class="subject-header">
+                            <a href="#" class="subject-link" data-subject="Algorithms">Algorithms</a>
+                        </h4>
+                    </div>
+                    
+                    <div class="subject">
+                        <h4 class="subject-header">
+                            <a href="#" class="subject-link" data-subject="Database-Management-Systems">Database Management Systems</a>
+                        </h4>
+                    </div>
+                    
+                    <div class="subject">
+                        <h4 class="subject-header">
+                            <a href="#" class="subject-link" data-subject="Software-Engineering">Software Engineering</a>
+                        </h4>
+                    </div>
+                    
+                    <div class="subject">
+                        <h4 class="subject-header">
+                            <a href="#" class="subject-link" data-subject="Biology-and-Environmental-Science">Biology and Environmental Science for Engineers</a>
+                        </h4>
+                    </div>
+                    
+                    <div class="subject">
+                        <h4 class="subject-header">
+                            <a href="#" class="subject-link" data-subject="Professional-Ethics">Professional Ethics and Legal Practices</a>
+                        </h4>
+                    </div>
+                    
+                    <div class="subject">
+                        <h4 class="subject-header">
+                            <a href="#" class="subject-link" data-subject="Engineering-Physics">Engineering Physics</a>
+                        </h4>
+                    </div>
+                    
+                    <div class="subject">
+                        <h4 class="subject-header">
+                            <a href="#" class="subject-link" data-subject="Engineering-Chemistry">Engineering Chemistry</a>
+                        </h4>
+                    </div>
+                    
+                    <div class="subject">
+                        <h4 class="subject-header">
+                            <a href="#" class="subject-link" data-subject="C-Programming">C Programming</a>
+                        </h4>
+                    </div>
+                    
+                    <div class="subject">
+                        <h4 class="subject-header">
+                            <a href="#" class="subject-link" data-subject="Engineering-Mathematics-I">Engineering Mathematics - I</a>
+                        </h4>
+                    </div>
+                    
+                    <div class="subject">
+                        <h4 class="subject-header">
+                            <a href="#" class="subject-link" data-subject="Principles-of-Digital-Design">Principles of Digital System Design</a>
+                        </h4>
+                    </div>
+                    
+                    <div class="subject">
+                        <h4 class="subject-header">
+                            <a href="#" class="subject-link" data-subject="Microprocessor">Microprocessor and Microcontroller for Home Appliances</a>
+                        </h4>
+                    </div>
+                    
+                    <div class="subject">
+                        <h4 class="subject-header">
+                            <a href="#" class="subject-link" data-subject="Fundamentals-of-Computing">Fundamentals of Computing</a>
+                        </h4>
+                    </div>
+                    
+                    <div class="subject">
+                        <h4 class="subject-header">
+                            <a href="#" class="subject-link" data-subject="Object-Oriented-Analysis-and-Design">Object Oriented Analysis and Design</a>
+                        </h4>
+                    </div>
+                    
+                    <div class="subject">
+                        <h4 class="subject-header">
+                            <a href="#" class="subject-link" data-subject="Computer-Networks">Computer Networks</a>
+                        </h4>
+                    </div>
+                    
+                    <div class="subject">
+                        <h4 class="subject-header">
+                            <a href="#" class="subject-link" data-subject="Data-Warehousing-and-Data-Mining">Data Warehousing and Data Mining</a>
+                        </h4>
+                    </div>
+                    
+                    <div class="subject">
+                        <h4 class="subject-header">
+                            <a href="#" class="subject-link" data-subject="Python-Programming">Python Programming</a>
+                        </h4>
+                    </div>
+                    
+                    <div class="subject">
+                        <h4 class="subject-header">
+                            <a href="#" class="subject-link" data-subject="Discrete-Mathematics">Discrete Mathematics</a>
+                        </h4>
+                    </div>
+                    
+                    <div class="subject">
+                        <h4 class="subject-header">
+                            <a href="#" class="subject-link" data-subject="Design-and-Analysis-of-Algorithms">Design and Analysis of Algorithms</a>
+                        </h4>
+                    </div>
+                    
+                    <div class="subject">
+                        <h4 class="subject-header">
+                            <a href="#" class="subject-link" data-subject="Programming-in-Java">Programming in Java</a>
+                        </h4>
+                    </div>
+                    
+                    <div class="subject">
+                        <h4 class="subject-header">
+                            <a href="#" class="subject-link" data-subject="Operating-Systems">Operating Systems</a>
+                        </h4>
+                    </div>
+                    
+                    <div class="subject">
+                        <h4 class="subject-header">
+                            <a href="#" class="subject-link" data-subject="Compiler-Design">Compiler Design</a>
+                        </h4>
+                    </div>
+                    
+                    <div class="subject">
+                        <h4 class="subject-header">
+                            <a href="#" class="subject-link" data-subject="Internet-Programming">Internet Programming for Packets Delivery</a>
+                        </h4>
+                    </div>
+                    
+                    <div class="subject">
+                        <h4 class="subject-header">
+                            <a href="#" class="subject-link" data-subject="Cryptography-and-Network-Security">Cryptography and Network Security for Digital Signature</a>
+                        </h4>
+                    </div>
+                    
+                    <div class="subject">
+                        <h4 class="subject-header">
+                            <a href="#" class="subject-link" data-subject="Object-Oriented-Programming-with-C++">Object Oriented Programming with C++ Advanced Design Patterns</a>
+                        </h4>
+                    </div>
+                    
+                    <div class="subject">
+                        <h4 class="subject-header">
+                            <a href="#" class="subject-link" data-subject="Probability-and-Statistics">Probability and Statistics for Decision Making in Business</a>
+                        </h4>
+                    </div>
+                    
+                    <div class="subject">
+                        <h4 class="subject-header">
+                            <a href="#" class="subject-link" data-subject="Computer-Architecture">Computer Architecture</a>
+                        </h4>
+                    </div>
+                    
+                    <div class="subject">
+                        <h4 class="subject-header">
+                            <a href="#" class="subject-link" data-subject="Theory-of-Computation">Theory of Computation</a>
+                        </h4>
+                    </div>
+                    
+                    <div class="subject">
+                        <h4 class="subject-header">
+                            <a href="#" class="subject-link" data-subject="Artificial-Intelligence">Artificial Intelligence</a>
+                        </h4>
+                    </div>
+                    
+                    <div class="subject">
+                        <h4 class="subject-header">
+                            <a href="#" class="subject-link" data-subject="Technical-English">Technical English</a>
+                        </h4>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+    </section>
+          <!-- <section id="courses">
+              <br><br>
+              <div class="courseheader">
+    
+                <h2>CSE Courses</h2>
+              </div>
+                
+                <div class="course-grid">
+                 
+                  
+                  <div class="course-card">
+                    <h3>Internet Programming</h3>
+                    <p>Learn how to develop interactive and dynamic websites using web technologies.</p>
+                     
+                    <button class="button type1">
+                    </button>
+                  </div>
+                  
+                  
+                  
+                  <div class="course-card">
+                    <h3>Python Programming</h3>
+                    <p>Learn the Python programming language and its applications in engineering.</p>
+                     
+                    <button class="button type1">
+                    </button>
+                  </div>
+                  
+                  
+                  <div class="course-card">
+                    <h3>Artificial Intelligence</h3>
+                    <p>Explore the fundamental concepts and techniques of artificial intelligence.</p>
+        <a href="https://app.napkin.ai/page/CgoiCHByb2Qtb25lEiwKBFBhZ2UaJGFjOWM3YjUyLTJiNjItNDRlNy1iNzE3LTc1YzgwM2Q5ZjAxYw?s=1">
+                    <button class="button type1">
+                    </button>
+                  </a>
+                  </div>
+                  
+                </div>
+              </section> -->
+               
+<section id="courses1" style="background: linear-gradient(135deg, #1a1a2e 0%, #16213e 100%); min-height:100vh">
+    <br>
+    <br>
+         <div class="hero-courses1">
+
+      <h1 class="hero-title1">Course Categories ....</h1>
+      <div class="categories-container1">
+        <a href="subject.html#core" class="category-link1">
+          <div class="category-card1 core">
+            <div class="category-icon1">📚</div>
+            <h2 class="category-title1">Core Subjects</h2>
+            <p class="category-description1">Foundation courses essential for your academic journey</p>
+            <div class="category-stats1">
+              <span class="stat1">20+ Courses</span>
+              <span class="stat1">Basic to Advanced</span>
+            </div>
+            <div class="shine1"></div>
+          </div>
+        </a>
+
+        <a href="subject.html#programming" class="category-link1">
+          <div class="category-card1 programming">
+            <div class="category-icon1">💻</div>
+            <h2 class="category-title1">Programming</h2>
+            <p class="category-description1">Master the art of coding with modern technologies</p>
+            <div class="category-stats1">
+              <span class="stat1">10+ Languages</span>
+              <span class="stat1">Hands-on Projects</span>
+            </div>
+            <div class="shine1"></div>
+          </div>
+        </a>
+
+        <a href="subject.html#elective" class="category-link1">
+          <div class="category-card1 elective">
+            <div class="category-icon1">🎯</div>
+            <h2 class="category-title1">Electives</h2>
+            <p class="category-description1">Specialized courses to enhance your expertise</p>
+            <div class="category-stats1">
+              <span class="stat1">8+ Domains</span>
+              <span class="stat1">Industry Focused</span>
+            </div>
+            <div class="shine1"></div>
+          </div>
+        </a>
+      </div>
+    </div>
+</section>
+             <section id="events1">
+      <h1>Upcoming Events</h1>
+  <div class="events-grid"></div>
+  <script>
+      const events = [
+  {
+    name: "Webinar ",
+    date: "Nov 04, 2024",
+    time: "9:00 AM",
+    location: "Study World College of Engineering, Coimbatore",
+    image: "https://www.knowafest.com/files/uploads/DR.JAUME-2024100816.jpg",
+    description: "https://forms.gle/VrS1cSyC14bu4Yzh9"
+  },
+  {
+    name: "Symposium",
+    date: "Nov  05, 2024",
+    time: "8:00 AM",
+    location: "Salem, Tamil Nadu",
+    image: "data:image/jpeg;base64,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",
+    description: "https://docs.google.com/forms/d/e/1FAIpQLSdv44m6ni-4_FpsAkAxujVd7lN52gZzdqsKJvmNcDLGBGdj4w/viewform?pli=1 "
+  },
+  {
+    name: "INFERIX'24 Symposium",
+    date: "Nov 06, 2024",
+    time: "9:00 AM",
+    location: "Erode, Tamil Nadu",
+    image: "data:image/png;base64,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",
+    description: "https://docs.google.com/forms/d/e/1FAIpQLSdeM5oIkptmWJ1r7eQ3UwiqqQ8iWXbYofBfz6R5mEfK1B-GTg/viewform?pli=1"
+  },
+  {
+    name: "EVOEDGE 2K24 Symposium",
+    date: "Nov 06 - 07, 2024",
+    time: "7:00 PM",
+    location: "Sri Sairam Engineering College",
+    image: "https://www.knowafest.com/files/uploads/1-2024102206.png",
+    description: "https://ieeeiesday-evoedge.netlify.app/"
+  },
+  {
+    name: "TECHKNIGHTS 2024",
+    date: "Nov 07 , 2024",
+    time: "10:00 AM",
+    location: "Kings Engineering College",
+    image: "https://www.knowafest.com/files/uploads/IMG-20241011-WA0159-2024101711.jpg",
+    description: "https://sites.google.com/kingsedu.ac.in/techknights/home?authuser=6"
+  },
+  {
+    name: "Hack-Hustle 2024",
+    date: "Nov 08, 2024",
+    time: "8:00 AM",
+    location: "Saveetha Engineering College",
+    image: "https://www.knowafest.com/files/uploads/%E2%80%9C24%20hrs%20hackathon%E2%80%9D-2024101507.png",
+    description: "https://hackhustle.devfolio.co/"
+  }
+];
+
+document.addEventListener('DOMContentLoaded', () => {
+  const eventsGrid = document.querySelector('.events-grid');
+  
+  events.forEach(event => {
+    const eventCard = document.createElement('div');
+    eventCard.className = 'event-card';
+    
+    eventCard.innerHTML = `
+      <img src="${event.image}" alt="${event.name}" class="event-image">
+      <div class="event-details">
+        <h2 class="event-name">${event.name}</h2>
+        <div class="event-info">
+          <i>📅</i>
+          <span>${event.date}</span>
+        </div>
+        <div class="event-info">
+          <i>⏰</i>
+          <span>${event.time}</span>
+        </div>
+        <div class="event-info">
+          <i>📍</i>
+          <span>${event.location}</span>
+        </div>
+        <a href="${event.description}" class="event-description">
+        <button style="padding:10px; border:none; cursor:pointer; border-radius:50px; background-color: whitesmoke; width:100%; "> Register </button>
+        </a>
+      </div>
+    `;
+    
+    eventsGrid.appendChild(eventCard);
+  });
+});
+</script>
+  </section>
+</div>
+<div class="subscribe-popup" >
+  <div class="1container">
+  
+          <!-- Popup Modal -->
+          <div id="popupForm" class="modal">
+              <div class="modal-content">
+
+                  <span id="closeBtn" class="close">&times;</span>
+                  <div class="subscrribe-img" style="text-align: center;">
+                    <img class="subscribers-img" data-src="https://cdn.bio.link/uploads/profile_pictures/2024-09-18/SMjsEe9msqbC2bNP70Sl0PTGKT5UTwYz.png" src="https://cdn.bio.link/uploads/profile_pictures/2024-09-18/SMjsEe9msqbC2bNP70Sl0PTGKT5UTwYz.png" alt="Comrade Mohan" style="height: 64PX; width: 64PX; text-align: center;" >
+                  </div>
+                  <h2>Comrade Mohan</h2><p>Subscribe to receive updates on free certifications, internships, job opportunities, and college news.</p>
+
+                  <form action="https://getform.io/f/bqonjqxb" method="post">
+                      <input type="email" id="email" placeholder="Enter your email" required>
+                      <button type="submit">Subscribe</button>
+                  </form>
+              </div>
+          </div>
+      </div>
+  </div>
+
+        <footer>
+          <div class="copyright_container">
+          <h6>@comrademohan2024. All rights reserved.</h6>
+    </div>
+    </footer>
+    <script>
+              document.querySelectorAll('.subject-link').forEach(link => {
+    link.addEventListener('click', function(event) {
+        event.preventDefault();
+        const subject = this.getAttribute('data-subject');
+        window.location.href = `/subject.html?subject=${subject}`;
+    });
+});
+      </script>
+<script>
+            window.addEventListener('scroll', function() {
+    const navbar = document.getElementById('navbar');
+    
+    if (window.scrollY >300) { // Change this value based on when you want to trigger the effect
+        navbar.classList.add('scrolled');
+    } else {
+        navbar.classList.remove('scrolled');
+    }
+});
+    function calculateCGPA() {
+      var SGrade = parseInt(document.getElementById('SGrade').value);
+      var AGrade = parseInt(document.getElementById('AGrade').value);
+      var BGrade = parseInt(document.getElementById('BGrade').value);
+      var CGrade = parseInt(document.getElementById('CGrade').value);
+      var DGrade = parseInt(document.getElementById('DGrade').value);
+      var EGrade = parseInt(document.getElementById('EGrade').value);
+      var totalSubjects = SGrade + AGrade + BGrade + CGrade + DGrade + EGrade;
+      var totalScore = (SGrade * 10) + (AGrade * 9) + (BGrade * 8) + (CGrade * 7) + (DGrade * 6) + (EGrade * 5);
+      var CGPA = totalScore / totalSubjects;
+      var resultElement = document.getElementById('result');
+      var homeCountElement = document.querySelector('.home-count .count');
+
+  // Set the initial value of the home count to 10
+  homeCountElement.textContent = "10";
+
+  // Function to update the home count
+  function updateHomeCount(value) {
+    homeCountElement.textContent = value.toFixed(2);
+  }
+
+  // Function to animate the home count
+  function animateHomeCount() {
+    var startValue = 10;
+    var endValue = CGPA;
+    var duration = 1000; // Animation duration in milliseconds
+    var startTime = performance.now();
+
+    function step(currentTime) {
+      var elapsedTime = currentTime - startTime;
+      var progress = elapsedTime / duration;
+
+      if (progress < 1) {
+        var currentValue = startValue + (endValue - startValue) * progress;
+        updateHomeCount(currentValue);
+        requestAnimationFrame(step);
+      } else {
+        updateHomeCount(endValue);
+      }
+    }
+
+    requestAnimationFrame(step);
+  }
+
+  // Start the home count animation
+  animateHomeCount();
+      resultElement.style.fontSize = "25px";
+      resultElement.innerHTML = "<p>CGPA: " + CGPA.toFixed(2) + "</p>";
+      // Send form data to PHP script asynchronously
+      fetch('save_grades.php', {
+        method: 'POST',
+        body: new FormData(document.getElementById('cgpaForm'))
+      }).then(response => {
+        // Handle response if needed
+        console.log(response);
+      }).catch(error => {
+        // Handle error if needed
+        console.error('Error:', error);
+      });
+    }
+    window.onload = function() {
+  checkSession();
+};
+document.getElementById("navbar-toggle").addEventListener("click", function() {
+const mobileNav = document.getElementById("mobile-nav");
+mobileNav.classList.toggle("active");
+});
+
+function hideSidebar(event) {
+const mobileNav = document.getElementById("mobile-nav");
+mobileNav.classList.toggle("active");
+}
+function checkSession() {    
+  fetch('check_session.php')  // Fetch the session check from PHP
+      .then(response => response.json())  // Parse JSON response
+      .then(data => {
+          const regno = document.getElementById('registered-number');  // Get the element to update
+          let sections = document.querySelectorAll("section");
+          if (data.status === 'logged_in') {
+              document.getElementById('register').style.display = 'none';
+              
+              // Update the text content with the username
+              regno.textContent = `${data.username}!`;
+          } else {
+              document.getElementById('register').style.display = 'flex';
+          }
+      })
+      .catch(error => {
+          console.error('Error checking session:', error);
+      });
+}
+function validateInput() {
+    const inputElement = document.getElementById('username');
+    let input = inputElement.value;
+    const message = document.getElementById('message');
+    if (input.length > 9) {
+        message.textContent = "😒";
+    }
+    
+    else if (input.length < 4) {
+        message.textContent = "📅";
+    }
+    
+    else if (input.length < 6) {
+        message.textContent = "🏬 ";
+    }
+    else if (input.length < 9) {
+        message.textContent = "🔢";
+    }
+    else {
+        message.textContent = "✅"; 
+
+    }
+}
+function subscribe() {
+    const popup = document.getElementById("popupForm");
+    popup.classList.add('fade-in');
+    popup.style.display = 'block';
+}
+const closeBtn = document.getElementById('closeBtn');
+
+closeBtn.addEventListener('click', () => {
+    const popup = document.getElementById("popupForm");
+    popup.classList.remove('fade-in'); // Remove the fade-in class
+    popup.classList.add('fade-out'); // Add the fade-out class
+
+    // Listen for the end of the fade-out animation
+    popup.addEventListener('animationend', () => {
+        popup.style.display = 'none'; // Hide the popup
+        popup.classList.remove('fade-out'); // Clean up the class for future use
+    }, { once: true }); // Use { once: true } to remove the listener after it runs
+});
+
+const modal = document.getElementById('popupForm');
+window.onclick = function (event) {
+    if (event.target === modal) {
+        const popup = document.getElementById("popupForm");
+        popup.classList.remove('fade-in'); // Remove the fade-in class
+        popup.classList.add('fade-out'); // Add the fade-out class
+    
+        // Listen for the end of the fade-out animation
+        popup.addEventListener('animationend', () => {
+            popup.style.display = 'none'; // Hide the popup
+            popup.classList.remove('fade-out'); // Clean up the class for future use
+        }, { once: true });
+    }
+  }
+
+  </script>
+<script src="script.js?v=8.19.10"></script>
+</body>
+</html>
