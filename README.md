@@ -52,7 +52,7 @@ You can access the calculator via [this demo link](https://cgpa.rf.gd).
 
 ## Contribution Guidelines
 
-If you would like to contribute to this project, please fork the repository and submit a pull request.
+If you would like to contribute to this project, please fork the repository and submit a pull request. [FOLLOW ME 💘](https://github.com/login?return_to=https%3A%2F%2Fgithub.com%2FComradeMohan).
 
 ## Copyright
 
