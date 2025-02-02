@@ -1,6 +1,6 @@
 # SAVEETHA CGPA Calculator
 
-An interactive web-based calculator designed for students at SAVEETHA University (or similar institutions) to calculate their CGPA based on their grades.
+An interactive web-based calculator designed for students at SAVEETHA University  to calculate their CGPA based on their grades.
 
 ## Key Features
 
