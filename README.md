@@ -59,3 +59,8 @@ If you would like to contribute to this project, please fork the repository and 
 © 2024 comrademohan. All rights reserved.
 
 ---
+
+
+<p align="center">
+  <img src="https://profile-counter.glitch.me/ComradeMohan-saveetha-cgpa/count.svg" />
+</p>
